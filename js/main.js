@@ -1,13 +1,13 @@
 
-let promptInput = prompt("Chose your weapon ");
+let promptInput = prompt("Chose your weapon ");  // takes the user choice
 let playerSelection = promptInput.toLowerCase();
 
 const weapons = ["rock","paper","scissors"];
 
-let computerSelection = weapons[Math.floor(Math.random()*weapons.length)];
+let computerSelection = weapons[Math.floor(Math.random()*weapons.length)]; // takes the computer choice
 
 
-function playround(playerSelection, computerSelection){
+function playround(playerSelection, computerSelection){   // the rules of win, lose, tie
     let result;
 
     if(playerSelection === "rock" && computerSelection === "paper" ){
@@ -30,6 +30,9 @@ return result
 
 }
 
-console.log(playround(playerSelection,computerSelection));
+console.log(playround(playerSelection,computerSelection)); // return the result of the match
+
+
+//display the choices
 console.log("player : "+playerSelection);
 console.log("computer : "+computerSelection);
